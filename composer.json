@@ -11,16 +11,20 @@
 	"require": {
 		"php": ">=5.5.0",
 		"fuzz/laravel-data": "1.0.*",
-		"fuzz/laravel-oauth": "1.0.*",
-		"fuzz/magic-box": "1.1.*",
-		"laravel/framework": "5.2.*",
+		"fuzz/magic-box": "dev-dev-5.4",
+		"laravel/framework": "5.4.*",
 		"league/csv": "^7.2@dev",
-		"lucadegasperi/oauth2-server-laravel": "5.1.*",
 		"league/fractal": "^0.13.0@dev"
 	},
 	"autoload": {
 		"psr-4": {
 			"Fuzz\\ApiServer\\": "src/"
 		}
-	}
+	},
+	"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/leayousoufov/magic-box"
+        }
+    ]
 }
